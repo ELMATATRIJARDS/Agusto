@@ -3,45 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Sobras de Restaurantes</title>
+    <title>Venta Agusto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Venta de Sobras de Restaurantes</h1>
+        <h1>Venta Agusto</h1>
         <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
         <nav id="sidebar">
             <ul class="menu-bar">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
         
-        <!--Barra de busqueda-->        
-        <div class="search-container">
+    <!-- Barra de búsqueda -->        
+    <div class="search-container">
         <input type="text" id="searchInput" placeholder="Buscar...">
         <button onclick="search()">Buscar</button>
     </div>
 
-    <!-- Botón de login -->
+    <!-- Botones de inicio de sesión y registro -->
     <div class="login-container">
         <button class="login-btn" onclick="openLogin()">Iniciar sesión</button>
+        <button class="registro-btn" onclick="openRegistro()">Registrarse</button>
     </div>
     
     <div class="container">
         <div class="menu">
             <div class="item" data-precio="10">
-                <img src="comida1.jpg" alt="Comida 1">
-                <h2>Plato 1 - <span class="precio">10 €</span></h2>
-                <p>Descripción del plato 1.</p>
+                <img src="img/andres-carne-de-res-chia.jpg" alt="Comida 1">
+                <h2>Carne de Res - <span class="precio">10 €</span></h2>
                 <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
             </div>
             <div class="item" data-precio="15">
-                <img src="comida2.jpg" alt="Comida 2">
-                <h2>Plato 2 - <span class="precio">15 €</span></h2>
-                <p>Descripción del plato 2.</p>
+                <img src="img/ant-pure-de-papas.jpg" alt="Comida 2">
+                <h2>Pure de Papas - <span class="precio">15 €</span></h2>
                 <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
             </div>
             <!-- Agregar más elementos según sea necesario -->
