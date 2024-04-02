@@ -137,3 +137,47 @@ button:hover {
 .formulario button:hover {
     background-color: #45a049;
 }
+
+#sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.menu-bar {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+
+.menu-bar li {
+    padding: 15px;
+}
+
+.menu-bar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-bar li a:hover {
+    color: #55b;
+}
+
+.menu-btn {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: #333;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
