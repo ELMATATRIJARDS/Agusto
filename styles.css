@@ -23,16 +23,25 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    overflow: hidden; /* Para recortar cualquier parte del texto que se desborde */
+    display: flex;
+    flex-direction: column;
 }
 
 .item img {
     width: 100%;
-    border-radius: 5px;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover;
 }
 
 .item h2 {
     margin-top: 10px;
+    margin-bottom: 5px; /* Separación entre el nombre y el precio */
+    overflow: hidden; /* Para recortar el texto que se desborde */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
+
 
 button {
     background-color: #4CAF50;
@@ -181,7 +190,7 @@ button:hover {
     cursor: pointer;
 }
 
-/*barra de búsqueda */
+/* Barra de búsqueda */
 .search-container {
     margin: 20px auto;
     max-width: 600px;
@@ -213,14 +222,14 @@ button:hover {
     background-color: #3d9140;
 }
 
-/* Estilos para el botón de inicio de sesión */
+/* Estilos para los botones de inicio de sesión y registro */
 .login-container {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-.login-btn {
+.login-btn, .register-btn {
     background-color: #45a049;
     color: white;
     padding: 10px 20px;
@@ -228,10 +237,28 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-right: 10px; /* Espacio entre los botones */
+    flex-grow: 1; /* Hace que ambos botones tengan el mismo tamaño */
 }
 
 .login-btn:hover {
     background-color: #3d9140;
 }
 
+/* Estilos para el título */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Sombrero en negro */
+    padding: 20px 0; /* Aumenta el espacio interno para mejorar la legibilidad */
+}
 
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Sombrero en negro */
+    padding: 20px 0; /* Aumenta el espacio interno para mejorar la legibilidad */
+    position: fixed; /* Mantiene el pie de página en la parte inferior */
+    width: 100%; /* Asegura que el pie de página se extienda a lo ancho de la pantalla */
+    bottom: 0; /* Coloca el pie de página en la parte inferior de la pantalla */
+    z-index: 999; /* Asegura que el pie de página esté encima de otros elementos */
+}
