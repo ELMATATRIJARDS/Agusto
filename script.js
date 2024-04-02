@@ -56,3 +56,10 @@ document.getElementById('formulario-pago').addEventListener('submit', function(e
     alert('Pago realizado con éxito');
     cerrarFormulario();
 });
+
+//Menu desplegable
+function toggleMenu() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.style.left = sidebar.style.left === '0px' ? '-250px' : '0px';
+}
+
