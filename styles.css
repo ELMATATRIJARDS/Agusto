@@ -263,8 +263,13 @@ header img {
     width: 100px; /* Ajusta el tamaño del logo según sea necesario */
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 120px; /* Añade un margen inferior para dar espacio al pie de página */
+}
 
-/* Estilos para el pie de página */
 footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
@@ -272,5 +277,5 @@ footer {
     position: fixed; 
     width: 100%; 
     bottom: 0; 
-    z-index: 999; 
+    z-index: 999;
 }
