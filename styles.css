@@ -42,7 +42,6 @@ body {
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
-
 button {
     background-color: #4CAF50;
     color: white;
@@ -245,14 +244,25 @@ button:hover {
     background-color: #3d9140;
 }
 
-/* Estilos para el título */
+/* Estilos para el título y el logo */
 header {
-    display: flex; /* Usa flexbox para alinear elementos */
-    justify-content: space-between; /* Alinea los elementos horizontalmente */
-    align-items: center; /* Alinea verticalmente los elementos */
-    background-color: rgba(0, 0, 0, 0.2); /* Sombrero en negro */
-    padding: 20px 40px; /* Aumenta el espacio interno para mejorar la legibilidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
 }
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    margin-right: 10px; /* Ajusta la separación del logo hacia la derecha */
+}
+
+header img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
 
 /* Estilos para el pie de página */
 footer {
@@ -263,17 +273,4 @@ footer {
     width: 100%; 
     bottom: 0; 
     z-index: 999; 
-}
-
-header h1 {
-    margin: 0; /* Elimina el margen predeterminado */
-    text-align: center; /* Centra el texto horizontalmente */
-    flex-grow: 1; /* Hace que el título ocupe el espacio disponible */
-}
-
-/* Estilos para el logo */
-header img {
-    width: 150px; /* ajusta el tamaño según sea necesario */
-    height: 500;
-    width: 400;
 }
