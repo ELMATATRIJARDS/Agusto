@@ -247,18 +247,33 @@ button:hover {
 
 /* Estilos para el título */
 header {
-    text-align: center;
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: space-between; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos */
     background-color: rgba(0, 0, 0, 0.2); /* Sombrero en negro */
-    padding: 20px 0; /* Aumenta el espacio interno para mejorar la legibilidad */
+    padding: 20px 40px; /* Aumenta el espacio interno para mejorar la legibilidad */
 }
 
 /* Estilos para el pie de página */
 footer {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.2); /* Sombrero en negro */
-    padding: 20px 0; /* Aumenta el espacio interno para mejorar la legibilidad */
-    position: fixed; /* Mantiene el pie de página en la parte inferior */
-    width: 100%; /* Asegura que el pie de página se extienda a lo ancho de la pantalla */
-    bottom: 0; /* Coloca el pie de página en la parte inferior de la pantalla */
-    z-index: 999; /* Asegura que el pie de página esté encima de otros elementos */
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
+    z-index: 999; 
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen predeterminado */
+    text-align: center; /* Centra el texto horizontalmente */
+    flex-grow: 1; /* Hace que el título ocupe el espacio disponible */
+}
+
+/* Estilos para el logo */
+header img {
+    width: 150px; /* ajusta el tamaño según sea necesario */
+    height: 500;
+    width: 400;
 }
